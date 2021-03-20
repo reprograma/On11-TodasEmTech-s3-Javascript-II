@@ -6,34 +6,34 @@ Lógica Aplicada - Loop, Escopo e Função
 Entender os princípios básicos de lógica de programação utilizando a linguagem JavaScript.
 
 <h2> Recursos necessários: </h2>
- Visual Code
+ Visual Code<br />
  Google Chrome
 
 <h2>Conteúdo da manhã - 9h - 12h</h2>
 
 <h3>Apresentação</h3>
 
-Chamada
-Apresentação professora e monitoras
-Combinados de aula
+Chamada<br />
+Apresentação professora e monitoras<<br />
+Combinados de aula<br />
 Apresentação das Alunas
 
 <h3>Introdução</h3>
-O que vamos aprender?
+O que vamos aprender?<br />
 Como vamos organizar o aprendizado?
 
 <h3>Principíos Básicos</h3>
 
-O que é função? Quais suas extensões?
-O que é escopo?
-O que é Looping? Quais vamos aprender?
+O que é função? Quais suas extensões?<br />
+O que é escopo?<br />
+O que é Looping? Quais vamos aprender?<br />
 O que preciso para fazer um programa?
 
 <h3>Pausa 15 minutos</h3>
 
 <h2>Função sem parametro/atribudo</h2>
-O que é função sem parametro?
-Quando utilizar?
+O que é função sem parametro?<br />
+Quando utilizar?<br />
 Qual a Sintaxe?
 
 <h3>Exercicios</h3>
@@ -59,8 +59,8 @@ Qual a Sintaxe?
 
 <h2>Função com parametro/atribudo</h2>
 
-O que é função sem parametro?
-Quando utilizar?
+O que é função sem parametro?<br />
+Quando utilizar?<br />
 Qual a sintaxe?
 
 <h3>Almoço</h3>
@@ -86,21 +86,21 @@ Qual a sintaxe?
 <h3>Revisão</h3>
 
 <h2>Repetições</h2>
-O que é uma repetição?
-Quando utilizar?
+O que é uma repetição?<br />
+Quando utilizar?<br />
 Qual a sintaxe?
 
 <h3>Exercicios</h3>
- //EXERCICIOS COM WHILE E FOR
- //CRIE UMA CALCULADORA COM WHILE E COM FOR
+ //EXERCICIOS COM WHILE E FOR<br />
+ //CRIE UMA TABUADA COM WHILE E COM FOR
  
 <h3>Revisão</h3>
 
 <h3>Pausa 15 minutos</h3>
 
 <h2>Escopo</h2>
-O que é um escopo?
-Quando utilizar?
+O que é um escopo?<br />
+Quando utilizar?<br />
 Como identificar?
 
 <h3>Exercicios</h3>
