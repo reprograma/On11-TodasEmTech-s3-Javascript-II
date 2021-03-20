@@ -5,9 +5,9 @@ Lógica Aplicada - Loop, Escopo e Função
 
 Entender os princípios básicos de lógica de programação utilizando a linguagem JavaScript.
 
-<h2> Recursos necessários: <h/2>
- - Visual Code
- - Google Chrome
+<h2> Recursos necessários: </h2>
+ Visual Code
+ Google Chrome
 
 <h2>Conteúdo da manhã - 9h - 12h</h2>
 
