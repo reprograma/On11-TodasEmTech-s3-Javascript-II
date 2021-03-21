@@ -1,0 +1,86 @@
+
+
+<html>
+<body>
+<script>
+// EXERCICIO:
+//CALCULE A MEDIA DO ALUNO
+
+//Questão: 
+//ETAPA 1 = Elaborar um programa que calcule a média do aluno.
+//ETAPA 2 = Informar se ele foi aprovado(utilizar estrutura condicional)
+//ETAPA 3 = GARANTIR que todos os campos serão preenchidos (Utilizar return)
+nome();
+function nome (){
+var nomeAluno = prompt("Digite seu nome");
+if( !nomeAluno){
+ return nome(); 
+
+} else{ primeiranota(nomeAluno);}
+}
+
+function primeiranota(nomeAluno){
+    var nota1 = Number( prompt(" Digite a nota 1"));    
+if( !nota1  ){
+  
+    return primeiranota(nomeAluno);
+
+} else { segundanota(nota1, nomeAluno);
+      }
+
+}
+
+function segundanota ( nota1, nomeAluno){
+    var nota2 = Number( prompt(" Digite a nota 2"));
+    if ( !nota2){
+        return segundanota(nota1, nomeAluno);
+    }else { terceiranota(nota1,nota2, nomeAluno);}
+
+}
+function terceiranota(nota1, nota2, nomeAluno){
+
+    var nota3 = Number( prompt(" Digite a nota 3"));
+      if( !nota3 ){
+return terceiranota(nota1, nota2, nomeAluno);
+
+      } else{
+
+        var media =Number((nota1+nota2+nota3)/3).toFixed(2);
+    console.log(media);
+
+    if( media < 6){
+        alert( "Media final: "+ media+ ". O aluno(a) " + nomeAluno + " está reprovado.");
+    } else if(media >=6   ){
+        alert( "Media final: "+ media + ".O aluno(a) " + nomeAluno + " está aprovado.");
+    }
+      }
+
+}
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+
+
+
+</html>

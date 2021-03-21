@@ -1,0 +1,41 @@
+<html>
+<body>
+
+<script>
+// EXERCICIO: 
+// Farmacia JS está em promoção. A cada 2 produtos iguais comprados, receba 5 reais de desconto. Escreva um programa para auxiliar a farmacia a calcular o valor final do produto.
+
+var produto1 = prompt("Produto um:");
+var preco1 = Number (prompt( "Valor do produto:"));
+var produto2 = prompt("Produto dois:");
+var preco2 = Number (prompt( "Valor do produto:"));
+var valorfinal;
+const desconto = Number(5);
+
+if( produto1 ==produto2 ){
+valorfinal = (preco1+preco2)-desconto;
+alert( " Valor final: R$"+valorfinal);
+
+} else { valorfinal = preco1 + preco2; 
+    alert( " Valor final: R$"+valorfinal);
+}
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+
+
+
+
+
+
+
+</html>
