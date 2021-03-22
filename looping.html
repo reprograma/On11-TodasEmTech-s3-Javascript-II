@@ -93,9 +93,33 @@ function validarSenha(){
     
 validarSenha()
 
-        //EXERCICIOS COM WHILE E FOR
+//EXERCICIOS COM WHILE E FOR
 
-        //CRIE UMA CALCULADORA COM WHILE E COM FOR
+//CRIE UMA CALCULADORA COM WHILE E COM FOR
+while(true){
+
+    var getNumeroOne = Number(prompt("Digite um número: "));
+    var getNumeroTwo = Number(prompt("Digite outro número: "));
+    console.log(" + →  SOMAR");
+    console.log(" - →  SUBTRAIR");
+    console.log(" * →  MULTIPLICAR");
+    console.log(" / →  DIVIDIR");
+    var getSinal = prompt("Digite a operação: ");
+    if(getSinal == "+"){
+    alert("A SOMA é: " + (getNumeroOne + getNumeroTwo));
+    } else if (getSinal == "-"){
+    alert("A SUBTRAÇÃO é: " + (getNumeroOne - getNumeroTwo));
+    } else if (getSinal == "*"){
+    alert("A MULTIPLICAÇÃO é: " + (getNumeroOne * getNumeroTwo));
+    } else if (getSinal == "/"){
+    alert("A DIVISÃO é: " + (getNumeroOne / getNumeroTwo));
+    } 
+    var getContinuar = prompt("Deseja continuar?[1 = SIM / 2 = NÃO] ")
+    if(getContinuar == 2){
+    alert("Encerrando o programa!");
+    break;
+    };
+};
 </script>
     </html>
 
