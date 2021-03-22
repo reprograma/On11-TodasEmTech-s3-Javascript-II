@@ -1,102 +1,182 @@
 <html>
     <script>
-      //O que é função?
-//  - Função é um bloco de comandos a serem executados quando solicitado
+    //O que é função?
+    //  - Função é um bloco de comandos a serem executados quando solicitado
 
-        //Quando utilizamos?
-/*- Utilizamos a função para evitar a repetição de codigos ao longo do processo de contrução de um programa;
-Por ex: Se eu crio um programa matematico com um conta, toda vez que precisar dele vou precisar reescrever? 
-para isso eu tenho uma função, coloco tudo dentro dela, dou um nome e chamo quando precisar.
-*/
+    //Quando utilizamos?
+    /*- Utilizamos a função para evitar a repetição de codigos ao longo do processo de contrução de um programa;
+    Por ex: Se eu crio um programa matematico com um conta, toda vez que precisar dele vou precisar reescrever? 
+    para isso eu tenho uma função, coloco tudo dentro dela, dou um nome e chamo quando precisar.
+    */
 
-//O que é Função sem Parametro?
+    //O que é Função sem Parametro?
 
-/*- Função sem parametro/atribudo, é a função que não requer condição/parametro para ser executada, basta ser chamada
-*/
+    /*- Função sem parametro/atribudo, é a função que não requer condição/parametro para ser executada, basta ser chamada
+    */
 
-//O que é Sintaxe? 
+    //O que é Sintaxe? 
 
-/* SINTAXE É O FORMATO CORRETO UTILIZADO PARA ESCREVER UM PROCEDIMENTO/CODIGO*/$
+    /* SINTAXE É O FORMATO CORRETO UTILIZADO PARA ESCREVER UM PROCEDIMENTO/CODIGO*/$
 
-// QUAL A SINTAXE DA FUNCAO SEM PARAMETRO?
+    // QUAL A SINTAXE DA FUNCAO SEM PARAMETRO?
 
-function nomeDaFuncao(){
-    comandos
-}
+    function nomeDaFuncao(){
+        comandos
+    }
 
-//Explicando a sintaxe da função sem parametro:
+    //Explicando a sintaxe da função sem parametro:
 
-//A função é iniciada pela palavra function (função em Inglês) para declarar que o que vira depois é um função.
-// Em seguida um nome é atribuido a função
-// () é a indicação de parametro para a função, neste caso como não contém nada dentro dos (), esta função não tem parametros/atributos
-// {} indicam o armazenamento dos comandos desta função. TUDO o que estiver entre as chaves sera executado quando a função for chamada
-
-
-//COMO EU CHAMO UMA FUNÇÃO?
-// - A função é chamada pelo seu nome seguida de (): nomeDaFuncao()
-// () sempre deve ser colocado pós a função para indicar uma execução e informar se contem ou não parametros para essa execução
+    //A função é iniciada pela palavra function (função em Inglês) para declarar que o que vira depois é um função.
+    // Em seguida um nome é atribuido a função
+    // () é a indicação de parametro para a função, neste caso como não contém nada dentro dos (), esta função não tem parametros/atributos
+    // {} indicam o armazenamento dos comandos desta função. TUDO o que estiver entre as chaves sera executado quando a função for chamada
 
 
-//EX:
-
-function surpresa(){
-    alert('Palhaço')
-}
-surpresa()
-
-// function = caixa
-// nome da função = nome da caixa
-//alert = alertar uma informação
-// palhaço = informação a ser alertada
-// surpresa = ato de chamar a caixa
-// () = ato de executar (abrir a caixa)
+    //COMO EU CHAMO UMA FUNÇÃO?
+    // - A função é chamada pelo seu nome seguida de (): nomeDaFuncao()
+    // () sempre deve ser colocado pós a função para indicar uma execução e informar se contem ou não parametros para essa execução
 
 
+    //EX:
 
-// EX: 
-//PROGRAMA DE SOMAR NUMEROS
-//PROGRAMA DE SUBTRAIR NUMEROS
-//PROGRAMA PARA MULTIPLICAR NUMEROS
+    function surpresa(){
+        alert('Palhaço')
+    }
+    surpresa()
 
-
-// EXERCICIO: 
-// Farmacia JS está em promoção. A cada 2 produtos iguais comprados, receba 5 reais de desconto. Escreva um programa para auxiliar a farmacia a calcular o valor final do produto.
-
-
-//O QUE É RETURN:
-
-//-Return é a indicação que após uma etapa ser verdadeira (indicada por condição ou lopping), o código não podera prosseguir e devera retornar. 
-//Normalmente indicamos para qual etapa o código deve retornar.
-
-//EX:
-function confirmarChave(){
-var chave = Number(prompt("Insira o número correto da chave: "));
-if(chave == 1){
-    alert("Chave esta correta")
-}else{
-    return confirmarChave()
-}
-}
-confirmarChave()
-
-//Explicação:
-//Neste exemplo, o return ira fazer com que a função seja executada sempre que o usuário inserir no prompt um numero diferente de 1
-
-
-// EXERCICIO:
-//CALCULE A MEDIA DO ALUNO
-
-//Questão: 
-//ETAPA 1 = Elaborar um programa que calcule a média do aluno.
-//ETAPA 2 = Informar se ele foi aprovado(utilizar estrutura condicional)
-//ETAPA 3 = GARANTIR que todos os campos serão preenchidos (Utilizar return)
-
-
-//EXERCICIO 2:
-
-//Ajude este supermercado a calcular o desconto dos produtos. A cada 3 itens comprados, o 4º item sai com 50% de desconto.
+    // function = caixa
+    // nome da função = nome da caixa
+    //alert = alertar uma informação
+    // palhaço = informação a ser alertada
+    // surpresa = ato de chamar a caixa
+    // () = ato de executar (abrir a caixa)
 
 
 
+    // EX: 
+    //PROGRAMA DE SOMAR NUMEROS
+    //PROGRAMA DE SUBTRAIR NUMEROS
+    //PROGRAMA PARA MULTIPLICAR NUMEROS
+    function somar(){
+        var getNumberOne = Number(prompt("Digite um número: "));
+        var getNumberTwo = Number(prompt("Digite segundo  número: "));
+        var calculo = getNumberOne + getNumberTwo;
+        alert(calculo);
+    }
+    somar();
+
+    function subtrair(){
+        var getNumberOne = Number(prompt("Digite um número: "));
+        var getNumberTwo = Number(prompt("Digite segundo  número: "));
+        var calculo = getNumberOne - getNumberTwo;
+        alert(calculo);
+    }
+    subtrair();
+
+    function multiplicar(){
+        var getNumberOne = Number(prompt("Digite um número: "));
+        var getNumberTwo = Number(prompt("Digite segundo  número: "));
+        var calculo = getNumberOne * getNumberTwo;
+        alert(calculo);
+    }
+    multiplicar();
+
+    // EXERCICIO: 
+    // Farmacia JS está em promoção. A cada 2 produtos iguais comprados, receba 5 reais de desconto. Escreva um programa para auxiliar a farmacia a calcular o valor final do produto.
+    function desconto(){
+        let getNomeProdutoOne = prompt("Digite o nome do primeiro: ");
+        let getPrecoProdutoOne = Number(prompt("Digite o preço do primeiro: "))
+        let getNomeProdutoTwo = prompt("Digite o nome do segundo: ");
+        let getPrecoProdutoTwo = Number(prompt("Digite o preço do segundo: "));
+        var valor;
+        if(getNomeProdutoOne == getNomeProdutoTwo){
+            valor = (getPrecoProdutoOne + getPrecoProdutoTwo) - 5;
+            alert("O valor total da compra R$ " + valor);
+        } else {
+            valor = getPrecoProdutoOne + getPrecoProdutoTwo;
+            alert("O valor total da compra R$ " + valor);
+        }
+    }
+
+    desconto()
+
+    //O QUE É RETURN:
+
+    //-Return é a indicação que após uma etapa ser verdadeira (indicada por condição ou lopping), o código não podera prosseguir e devera retornar. 
+    //Normalmente indicamos para qual etapa o código deve retornar.
+
+     //EX:
+    function confirmarChave(){
+        var chave = Number(prompt("Insira o número correto da chave: "));
+        if(chave == ""){
+            return confirmarChave()
+        }
+        if(chave == 1){
+            alert("Chave esta correta")
+        }else{
+            return confirmarChave()
+        }
+    }
+    confirmarChave()
+
+    //Explicação:
+    //Neste exemplo, o return ira fazer com que a função seja executada sempre que o usuário inserir no prompt um numero diferente de 1
+
+
+    // EXERCICIO:
+    //CALCULE A MEDIA DO ALUNO
+
+    //Questão: 
+    //ETAPA 1 = Elaborar um programa que calcule a média do aluno.
+    //ETAPA 2 = Informar se ele foi aprovado(utilizar estrutura condicional)
+    //ETAPA 3 = GARANTIR que todos os campos serão preenchidos (Utilizar return)var getNome = prompt("QuaL NOME: ");
+
+    function mediaAluno(){
+        var getNome = prompt("QuaL NOME: ");
+        var getNotaOne = Number(prompt("Digita a nota: "));
+        var getNotaTwo = Number(prompt("Digita a nota: "));
+        if(getNome == "" || getNotaOne  == "" || getNotaTwo == ""){
+            return media();
+        }
+        var media = (getNotaOne + getNotaTwo) / 2;
+        if(media >= 5){
+            alert(nome + " sua MÉDIA é " + media + ". Você foi APROVADO");
+        } else if(media == 4){
+            alert(nome + " sua MÉDIA é " + media + ". Você foi aprovado, mas está em RECUPERAÇÃO");
+        } else{
+            alert(nome + " sua MÉDIA é " + media + ". Você foi REPROVADO");
+        }
+    };
+    mediaAluno();
+
+
+    //EXERCICIO 2:
+
+    //Ajude este supermercado a calcular o desconto dos produtos. A cada 3 itens comprados, o 4º item sai com 50% de desconto.
+
+    function desconto(){
+        var getQuantidadeItens = Number(prompt("Quantos produtos comprados? "));
+        var tot = 0;
+        if(getQuantidadeItens > 3){
+            for(var i = 0; i < getQuantidadeItens; i++){
+            var getPrecoProduto = Number(prompt("Qual valor do " + (i+1) + " produto? R$ "));
+
+            if(i == 4){
+                var desconto = getPrecoProduto / 2;
+            }
+            tot += getPrecoProduto;
+            } 
+            alert("Parabéns, você ganhou 50% de desconto no 4º item, valor a pagar R$ " + (tot - desconto));
+        }else{
+            for(var i = 0; i < getQuantidadeItens; i++){
+            var getPrecoProduto = Number(prompt("Qual valor do " + (i+1) + " produto? R$ "));
+            tot += getPrecoProduto;
+            }
+            alert("Não obteve desconto, valor a pagar R$ " + tot);
+        }
+    }
+
+    desconto()
+    
     </script>
 </html>

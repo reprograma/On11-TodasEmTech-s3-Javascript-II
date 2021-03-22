@@ -9,7 +9,7 @@ Por ex: Se eu crio um programa matematico com um conta, toda vez que precisar de
 para isso eu tenho uma função, coloco tudo dentro dela, dou um nome e chamo quando precisar.
 */
 
-//O que é Função sem Parametro?
+//O que é Função com Parametro?
 
 /*- Função sem parametro/atribudo, é a função que não requer condição/parametro para ser executada, basta ser chamada
 */
@@ -69,6 +69,22 @@ surpresa(numeroChave)
 // EXERCICIO: (UTILIZAR PARAMETRO) 
 // Farmacia JS está em promoção. A cada 2 produtos iguais comprados, receba 5 reais de desconto. Escreva um programa para auxiliar a farmacia a calcular o valor final do produto.
 
+let getNomeProdutoOne = prompt("Digite o nome do primeiro: ");
+let getPrecoProdutoOne = Number(prompt("Digite o preço do primeiro: "))
+let getNomeProdutoTwo = prompt("Digite o nome do segundo: ");
+let getPrecoProdutoTwo = Number(prompt("Digite o preço do segundo: "));
+function desconto(produtoOne, precoOne, produtoTwo, precoTwo){
+    var valor;
+    if(produtoOne == produtoTwo){
+        valor = (precoOne + precoTwo) - 5;
+        alert("O valor total da compra R$ " + valor);
+    } else {
+        valor = precoOne + precoTwo;
+        alert("O valor total da compra R$ " + valor);
+    }
+};
+
+desconto(getNomeProdutoOne, getPrecoProdutoOne, getNomeProdutoTwo, getPrecoProdutoTwo);
 
 
 //O QUE É RETURN:
@@ -98,6 +114,20 @@ confirmarChave(numero)
 //ETAPA 1 = Elaborar um programa que calcule a média do aluno.
 //ETAPA 2 = Informar se ele foi aprovado(utilizar estrutura condicional)
 //ETAPA 3 = GARANTIR que todos os campos serão preenchidos (Utilizar return)
+var getNome = prompt("QuaL NOME: ");
+var getNotaOne = Number(prompt("Digita a nota: "));
+var getNotaTwo = Number(prompt("Digita a nota: "));
+function mediaAluno(nome, nota1, nota2){
+    var media = (getNotaOne + getNotaTwo) / 2;
+    if(media >= 5){
+        alert(nome + " sua MÉDIA é " + media + ". Você foi APROVADO");
+    } else if(media == 4){
+        alert(nome + " sua MÉDIA é " + media + ". Você foi aprovado, mas está em RECUPERAÇÃO");
+    } else{
+        alert(nome + " sua MÉDIA é " + media + ". Você foi REPROVADO");
+    }
+};
+mediaAluno(getNome, getNotaOne, getNotaTwo);
 
 
 //EXERCICIO 2: (UTILIZAR PARAMETRO) 
