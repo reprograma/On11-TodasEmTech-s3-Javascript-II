@@ -1,0 +1,114 @@
+<html>
+
+<body>
+
+<script>
+//EXERCICIO 2: (UTILIZAR PARAMETRO) 
+
+//Ajude este supermercado a calcular o desconto dos produtos. A cada 3 itens comprados, o 4º item sai com 50% de desconto.
+
+Nprodutos();
+
+
+function Nprodutos(){
+    
+    var quantidade = Number(prompt( "Quantos produtos você irá levar?"));
+
+if( !quantidade){
+    return Nprodutos
+} else {
+    validacao(quantidade);
+}
+
+}
+
+function validacao(quantidade){
+
+    var faltam =". Faltam "+ (4-quantidade)+" produtos para participar da promoção!";
+         
+
+  if (quantidade == 1){
+
+    var valor1 = Number(prompt(" Valor do produto 1"));
+    if(!valor1){
+       return validacao();
+
+    }else{
+        alert( "Valor total: R$ "+ valor1+ faltam);
+    }
+
+  }else if(   quantidade == 2 ){
+   
+    var valor1 = Number(prompt(" Valor do produto 1"));
+
+    var valor2 = Number(prompt(" Valor do produto 2"));
+
+    var total = valor1+valor2;
+    if( !valor1 || !valor2){
+        return validacao();
+
+    }else{
+
+     alert( "Valor total: R$ "+ total+ faltam);}
+
+
+
+
+  }else if(   quantidade == 3 ){
+    var valor1 = Number(prompt(" Valor do produto 1"));
+
+      var valor2 = Number(prompt(" Valor do produto 2"));
+      var valor3 = Number(prompt(" Valor do produto 3"));
+
+
+var total = valor1+valor2+ valor3;
+if( !valor1 || !valor2|| !valor3){
+    return validacao();
+
+}else{
+
+ alert( "Valor total: R$ "+ total+ faltam);}
+
+
+
+  }  else if(   quantidade == 4 ){
+
+    var valor1 = Number(prompt(" Valor do produto 1"));
+    var valor2 = Number(prompt(" Valor do produto 2"));
+    var valor3 = Number(prompt(" Valor do produto 3"));
+    var valor4 = Number(prompt(" Valor do produto 4"));
+    var total = valor1+valor2+valor3+(valor4/2);
+    
+    if(!valor1 || !valor2 || !valor3){
+       return validacao();
+
+    }else{
+        alert( "Valor total: R$ "+ total+ " Com o desconto de 50% aplicado na quarta unidade");
+    }
+
+
+
+
+  }  
+
+
+
+
+
+
+}
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+
+
+
+</html>

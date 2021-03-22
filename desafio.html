@@ -1,4 +1,7 @@
 <html>
+    <body>
+        
+    
     <script>
 // DESAFIO 
 
@@ -9,11 +12,50 @@
 Se a velocidade for inferior ou igual a velocidade permitida, exiba a mensagem "Sem Multa". Se a velocidade for de até 10% maior que a permitida,
 exiba "Multa Leve". E, se a velocidade for superior a 20% da velocidade permitida, exiba "Multa Grave."*/
 
-//DESAFIO DE REPETIÇAO e FUNCAO
+  
+  var velocidadePermitida = Number(prompt("Velocidade permitida:"));
+  var velocidadeAtual = Number(prompt("Velocidade atual:"));
+ 
+    if( velocidadeAtual <= velocidadePermitida){
+     alert( "Sem multa")
+
+    }else if(   velocidadeAtual > velocidadePermitida)
+    {
+      
+
+     calcular();
+
+    }
+function calcular (){
+    var porcentagem10 = (velocidadePermitida*0.10) + velocidadePermitida;
+    var porcentagem20 = (velocidadePermitida*0.20) + velocidadePermitida;
+     
+    if(velocidadeAtual >= porcentagem10 && velocidadeAtual < porcentagem20  ){
+
+        alert("Multa leve");
+       
+    } else if( velocidadeAtual >= porcentagem20){
+
+        alert("Multa grave");
+
+    }
+
+
+
+
+
+
+
+}
+    //DESAFIO DE REPETIÇAO e FUNCAO
 
 //Crie um programa que verifique o valor inserido pelo usuário e imprima seus multiplos ( MAX 100 Numeros )
+     
+
+
 
 
 
     </script>
+    </body>
 </html>
