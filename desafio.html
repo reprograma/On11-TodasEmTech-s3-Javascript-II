@@ -9,11 +9,67 @@
 Se a velocidade for inferior ou igual a velocidade permitida, exiba a mensagem "Sem Multa". Se a velocidade for de até 10% maior que a permitida,
 exiba "Multa Leve". E, se a velocidade for superior a 20% da velocidade permitida, exiba "Multa Grave."*/
 
+
+//function sem parâmetro
+function velocidadePermitida1 () {
+    let velocidadePadrão = Number(prompt("Digite a velocidade permitida na estrada"));
+    let velocidadeCondutor = Number(prompt("Digite a velocidade em que o condutor está"));
+    if (velocidadeCondutor <= velocidadePadrão){
+        alert("Sem multa!");
+    } else {
+        let multaDezPorCento = velocidadePadrão * 1.10;
+        let multaVintePorCento = velocidadePadrão * 1.20;
+        if(velocidadeCondutor <= multaDezPorCento){
+            alert("Multa Leve");
+        } else if(velocidadeCondutor > multaVintePorCento){
+            alert("Multa grave!");
+        } else {
+        alert("Você ultrapassou a velocidade permitida e receberá uma multa!");
+        }
+    }
+}
+
+velocidadePermitida1();
+
+//function com parâmetro
+function velocidadePermitida2 (n1, n2) {
+    if(n2 < n1) {
+        alert("Sem multa!");
+    } else if(n2 <= (n1 * 1.10)){
+            alert("Multa Leve");
+        } else if(n2 > (n1 * 1.20)){
+            alert("Multa grave!");
+            } else if(n2 > (n1 * 1.10 ) && n2 < (n1 * 1.20)){
+                alert("Você ultrapassou a velocidade permitida e receberá uma multa!")
+            }
+}
+
+velocidadePermitida2(60, 40);
+
 //DESAFIO DE REPETIÇAO e FUNCAO
 
 //Crie um programa que verifique o valor inserido pelo usuário e imprima seus multiplos ( MAX 100 Numeros )
 
+//function (múltiplo de número) sem parâmetro
+function multNumber1() {
+    let number = prompt("Digite um número: ");
+    for(var i = 1; i <= 100; i++){
+        let mult = number * i;
+        document.write("<strong>Multiplo "+ i + ": " + mult+"<br></strong>");
+    } 
+}
 
+multNumber1();
 
+//function (múltiplo de número) com parâmetro
+function multNumber(n) {
+    for(var i = 1; i <= 100; i++){
+        let mult = n * i;
+        document.write("<strong>Multiplo "+ i + ": " + mult+"<br></strong>");
+    } 
+}
+
+multNumber(6);
     </script>
 </html>
+
