@@ -1,0 +1,151 @@
+<html>
+    <script>
+var numero1 = Number(prompt('Insira o primeiro número: ')); //Entrada de informação
+//Sintaxe do PROMPT = prompt(INSTRUÇÃO/INFORMAÇÂO)
+//Sintaxe de Number = Number(OQ CONVERTER)
+var numero2 = Number(prompt('Insira o segundo número: '));
+
+function calculo(){
+ //Posso fazer toda essa conta sem a variável "SOMA", mas se eu precisar calcular o numero1 + numero2 em outro momento vou precisar sempre refazer a conta.
+  //Variáveis me ajudam a armazenar informações que se repetem
+var soma = numero1 + numero2 // PROCESSAMENTO DA INFORMAÇÃO
+
+    alert(soma)//SAIDA DA INFORMAÇÃO
+}
+calculo() 
+
+//Reesplicar o código
+
+////PASSAR EXERCICIO = MONTE UM PROGRAMA DE SUBTRAIR E UM DE MULTIPLICAR
+
+
+
+
+////EXERCICIO MAIS COMPLEXO:
+
+//Farmacia JS está em promoção. A cada 2 produtos iguais comprados, receba 5 reais de desconto.
+//Escreva um programa para auxiliar a farmacia a calcular o valor final
+
+
+
+var outNome = prompt('Insira o nome do produto');
+var outValor = Number(prompt("Insira o valor do produto"));
+
+function calcular(){
+var conta = outValor * 2
+var promocao =  5
+var contaFinal = conta - promocao
+
+alert( "O valor final de " + outNome + " é " + contaFinal)
+
+
+}
+calcular()
+
+//MEDIA DO ALUNO
+
+//Questão: 
+//ETAPA 1 = Elaborar um programa que calcule a média do aluno.
+/////ETAPA 2 = Informar se ele foi aprovado(utilizar estrutura condicional)
+//ETAPA 3 = GARANTIR que todos os campos serão preenchidos (Utilizar return)
+
+
+
+//ETAPA 1 
+
+
+   
+function mediaAluno(){
+    var outNome = prompt("Insira o nome do aluno: ")
+    var outNota1 = Number(prompt("Insira a primeira nota: "))
+    var outNota2 = Number(prompt("Insira a segunda nota: "))
+    var media = (outNota1 + outNota2) / 2
+    alert(outNome + " Sua média é: " + media)
+}
+mediaAluno()
+
+
+
+
+
+
+
+ //   ETAPA 2
+
+
+
+
+
+    function mediaAluno(){
+    
+    var outNome = prompt("Insira o nome do aluno: ")
+    var outNota1 = Number(prompt("Insira a primeira nota: "))
+    var outNota2 = Number(prompt("Insira a segunda nota: "))
+    var media = (outNota1 + outNota2) / 2
+    //EXPLICAR A PRIORIDADE QUE A () DA A EXECUCAO DO CODIGO OU CALCULO
+    if(media >= 5){
+    alert(outNome + " Sua Média é: " + media + " .Você foi aprovado")
+
+    }else{
+        alert(outNome + " Sua Média é: " + media + " .Você foi reprovado")
+    }
+}
+    mediaAluno()
+
+
+
+//ETAPA 3
+
+
+        function mediaAluno(){
+var outNome = prompt("Insira o nome do aluno: ")
+    var outNota1 = Number(prompt("Insira a primeira nota: "))
+    var outNota2 = Number(prompt("Insira a segunda nota: "))
+
+    if(outNome == "" || outNota1 == "" || outNota2 == "" ){
+        alert("Por Favor, insira o nome e as notas");
+        
+        return mediaAluno()
+    }
+    
+    var media = (outNota1 + outNota2) / 2
+    //EXPLICAR A PRIORIDADE QUE A () DA A EXECUCAO DO CODIGO OU CALCULO
+    if(media >= 5){
+    alert(outNome + " Sua Média é: " + media + " .Você foi aprovado")
+
+    }else{
+        alert(outNome + " Sua Média é: " + media + " .Você foi reprovado")
+    }
+}
+
+    mediaAluno()
+
+
+
+
+
+
+
+   // EXERCICIO PARA TREINAMENTO 2
+
+
+
+//FARMACIA JS
+
+
+function promocaoSupermercado(){
+    var nome = prompt("Insira o Nome do Produto: ")
+    var valor = Number(prompt("Insira o Valor do produto: "));
+    
+    var calculo = valor * 3
+    var promocao = valor / 2
+    var valorFinal = calculo + promocao
+
+        alert("Promoção de: " + nome + " .Leve 4 por: R$ " + valorFinal)
+
+}
+promocaoSupermercado()
+
+
+</script>
+</html>
