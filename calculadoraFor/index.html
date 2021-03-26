@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+
+    <header>
+        Calculadora
+    </header>
+    <div id="container">
+        <div id="container-value">
+            <input type="number" name="txtValor" id="txtValor">
+        </div>
+
+    <section id="container-buttons">
+
+        <button id="btn1" type="button" onclick="buscarValor(1)" value="1"> 1
+        <button id="btn2" type="button" onclick="buscarValor(2)" value="2"> 2
+        <button id="btn3" type="button" onclick="buscarValor(3)" value="3"> 3
+        <button id="btnMais" type="button" onclick="operador('+')" value="+"> +
+        <button id="btn4" type="button" onclick="buscarValor(4)" value="4"> 4
+        <button id="btn5" type="button" onclick="buscarValor(5)" value="5"> 5
+        <button id="btn6" type="button" onclick="buscarValor(6)" value="6"> 6
+        <button id="btnMenos" type="button" onclick="operador('-')" value="-"> -
+        <button id="btn7" type="button" onclick="buscarValor(7)" value="7"> 7
+        <button id="btn8" type="button" onclick="buscarValor(8)" value="8"> 8
+        <button id="btn9" type="button" onclick="buscarValor(9)" value="9"> 9
+        <button id="btnDividir" type="button" onclick="operador('/')" value="/" > /
+        <button id="btn0" type="button" onclick="buscarValor(0)" value="0" style="grid-column: 1/4;width: 100%;"> 0       
+        <button id="btnMult" type="button" onclick="operador('*')" value="X"> x
+        <button id="btnIgual" type="button" value="=" style="grid-column: 1/5;width: 100%;"> =
+
+    </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
