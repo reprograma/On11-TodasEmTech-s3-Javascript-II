@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplos até 100!</title>
+</head>
+<body>
+
+    <header>
+        <h1>Multiplos do mesmo número até 100!</h1>
+    </header>
+    <div>
+        <p>
+            Insira um valor: <input type="number" name="txtNumeroInserido" id="txtNumeroInserido">
+            <input id="btnCalcular" type="button" value="Calcular">
+        </p>
+        <p>
+            <select name="selMultiplos" id="selMultiplos" size="10">
+                <option>Aguardando número o calculo</option>
+            </select>
+        </p>
+    </div>
+
+    <script type="module">
+        import gerarCalculo from './script.js'
+
+    </script>    
+</body>
+</html>
