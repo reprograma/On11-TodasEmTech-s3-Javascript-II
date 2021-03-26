@@ -14,6 +14,52 @@ exiba "Multa Leve". E, se a velocidade for superior a 20% da velocidade permitid
 //Crie um programa que verifique o valor inserido pelo usuário e imprima seus multiplos ( MAX 100 Numeros )
 
 
+// Mas e se a velocidade for  11 , 12 , 15, 17 % 
+
+
+
+
+
+
+var velocidadeMaxPermitida = 100
+var velocidadeDoCondutor = 150
+
+function calcularExessoDeVelocidade(porcetagem) {
+    // essa função vai retorna o calculo de excesso de Velocidade
+    return (velocidadeMaxPermitida * porcetagem) + velocidadeMaxPermitida
+}
+
+function calcularMulta() {
+ let multaGrave = calcularExessoDeVelocidade(0.20) 
+ let multa = calcularExessoDeVelocidade(0.10)
+
+ if (velocidadeDoCondutor >= multaGrave)
+ return "Multa Grave"
+ else if (velocidadeDoCondutor > velocidadeMaxPermitida && velocidadeDoCondutor <= multa)
+ return "Multa Leve"
+ else if (velocidadeDoCondutor >= multa) // condição fora dos parametros da prof
+ return " Fora dos Parametros"
+ else 
+ return "sem multa"
+}
+
+
+document.write(calcularMulta() + "<br>")
+
+
+
+
+
+// criar com resto   ex de uso   if (i%valorUsuario == 0)  -> logica para os proximo exercicio
+
+function multiplos(valorUsuario) { 
+for (let i = valorUsuario ; i <= 100*valorUsuario; i++) {
+    if (i%valorUsuario==0) {
+        document.write(i + "  ")
+    }
+}
+}
+multiplos(5)
 
     </script>
 </html>
