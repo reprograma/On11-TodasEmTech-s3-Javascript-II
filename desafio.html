@@ -1,5 +1,18 @@
-<html>
-    <script>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+<script>
+
+
+
+
+
 // DESAFIO 
 
 
@@ -14,6 +27,42 @@ exiba "Multa Leve". E, se a velocidade for superior a 20% da velocidade permitid
 //Crie um programa que verifique o valor inserido pelo usuário e imprima seus multiplos ( MAX 100 Numeros )
 
 
+/*
 
-    </script>
+var velocidadePermitida
+var velocidadeCondutor
+
+if velocidadeCondutor =< velocidadePermitida  // exiba a mensagem sem multa
+
+
+if velocidadeCondutor =< 1.10 // exiba Multa Leve
+
+
+if velocidadeCondutor => 1.20 // exiba Multa Grave
+
+
+*/
+
+var velocidadePermitida = Number(prompt("Digite Velocidade Permitida"));
+var velocidadeCondutor = Number(prompt("Digite Sua Velocidade"));
+function radar(){
+
+    if (velocidadeCondutor <= velocidadePermitida) {
+    alert("sem multa")
+    }
+    else if (velocidadeCondutor <= 1.10 * velocidadePermitida) {
+    alert("Multa Leve")    
+    }
+
+    else if (velocidadeCondutor >= 1.20 * velocidadePermitida) {
+        alert("Multa Grave")
+    }
+}
+radar()
+</script>
+    
+
+
+
+</body>
 </html>
