@@ -1,0 +1,44 @@
+<html>
+    <script>
+// DESAFIO 
+
+
+//EXERCICIO DE FUNCAO:
+
+/* Elabore um programa que leia a velocidade permitida em uma estrada e a velocidade de um condutor.
+Se a velocidade for inferior ou igual a velocidade permitida, exiba a mensagem "Sem Multa". Se a velocidade for de até 10% maior que a permitida,
+exiba "Multa Leve". E, se a velocidade for superior a 20% da velocidade permitida, exiba "Multa Grave."*/
+
+        function checarVelocidade(){
+            var velocidadePermitida = parseInt(prompt("Digite a velocidade permitida nessa via"));
+            var velocidadeCondutor = parseInt(prompt("Digite a velocidade do condutor"));
+            if(velocidadeCondutor<=velocidadePermitida){
+                alert("Sem Multa")
+            }
+            else if(velocidadeCondutor<=(velocidadePermitida*1.1)){
+                alert("Multa Leve")
+            }
+            else{
+                alert("Multa Grave.")
+            };
+        }
+        checarVelocidade()
+
+
+//DESAFIO DE REPETIÇAO e FUNCAO
+
+//Crie um programa que verifique o valor inserido pelo usuário e imprima seus multiplos ( MAX 100 Numeros )
+
+        function multiplos(){
+            console.log("a")
+            let numero = parseInt(prompt("Insira um numero do qual queria descobrir os multiplos até 100 numeros"));
+            let i;
+            for(i=1;i<=100;i++){
+                let multiplicacao = i * numero;
+                alert(i+" x "+numero+" = "+multiplicacao)
+            };
+        }
+        multiplos()
+
+    </script>
+</html>
