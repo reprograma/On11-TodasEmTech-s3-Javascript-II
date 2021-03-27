@@ -1,0 +1,101 @@
+<html>
+    <script>
+//O que é repetição?
+// -Repetição é um laço formado por um conjunto de códigos que a partir de uma condição = verdadeira, executa até que a mesma seja falsa
+
+ //Quando utilizamos?
+//Utilizamos para criar repetições sem a necessidade de escrever um código na quantidade em que ele precisa ser executado
+
+//EX: Em um caixa eletronico, uma senha pode ser digitada até 3 vezes caso o usuário erre as 3 tentativas, o cartão é bloqueado.
+//Não necessitamos criar 3 verificações de senha do usuário. Podemos indicar que a verificação deve repitir 3 vezes
+
+ //O que é Sintaxe? 
+
+/* SINTAXE É O FORMATO CORRETO UTILIZADO PARA ESCREVER UM PROCEDIMENTO/CODIGO*/$
+
+// QUAL A SINTAXE DOS TIPOS DE REPETIÇÕES QUE VAMOS APRENDER?
+
+//SINTAXE DO FOR:
+
+for(var i = 1; i < 3/* numero limite */ ; i++ /* OU (||) i = i + 1 */){
+    comandos
+}
+
+
+
+//SINTAXE DO while:
+
+while(condicao){
+    comandos
+}
+
+//EX DE VERIFICAÇÃO DE SENHA COM FOR
+//EX: CRIAR UM VERIFICADOR DE SENHA
+
+
+
+var senha = 123456;
+function validarSenha(){    
+    for(var i = 1; i <= 3; i++){ 
+        var digitarSenha = Number(prompt("Digite sua Senha"));
+        if(digitarSenha == senha){
+            alert("Parabéns, você esta online")
+            break
+        }
+        
+            
+    }if(i > 3){
+           alert("Você esta bloqueado") 
+    }
+        }
+
+
+validarSenha()
+
+//EXPLICAÇÃO: COMEÇO O CÓDIGO INDICANDO MINHA SENHA CORRETA
+// 
+// UTILIZO UM PROMPT PARA QUE O USUÁRIO POSSA DIGITAR UMA SENHA
+// IF (SE) A SENHA DIGITADA FOR IGUAL A SENHA CORRETA ELE ALERTA PARABENS, VOCÊ ESTA ONLINE
+// ELSE IF (SE NAO), ELE ABRE UM FOR PARA VERIFICAÇÃO E REPETIÇÃO
+
+//EXPLICAÇÃO DO FOR:
+
+// FOR DECLARA QUE I É IGUAL A 1
+// ; INDICA A CONCLUSÃO DA DECLARAÇÃO E O INICIO DA CONDIÇÃO
+// NA CONDIÇÃO I PRECISA SER MENOR QUE 3
+// ; INDICA A CONCLUSÃO DA DECLARAÇÃO E O INICIO DA EXECUÇÃO
+// SE I FOR MENOR QUE 3, I SERA IGUAL A I + 1
+
+// DENTRO DO FOR TEMOS O QUE PRECISA SER REPETIDO 3 VEZES (PROMPT PARA O USUARIO DIGITAR A SENHA)
+
+//APÓS O USUARIO DIGITAR 3 VEZES E NÃO FOR A SENHA CORRETA ELE SAI DO FOR (REPETICAO) E INFORMA QUE O MESMO ESTA BLOQUEADO
+
+
+
+//EX DE VERIFICAÇÃO DE SENHA COM WHILE
+//EX: CRIAR UM VERIFICADOR DE SENHA
+
+var senha = 123456;
+var i = 1
+function validarSenha(){ 
+    var digitarSenha = Number(prompt("Digite sua Senha"));
+        if(digitarSenha == senha){
+            alert("Parabéns, você esta online")
+        }else{
+         while(i < 3 && digitarSenha != senha){   
+             i++
+           var digitarSenha = Number(prompt("Digite sua Senha"));
+        
+        }
+        alert("Sua senha foi bloqueada")
+    }
+    }
+    
+validarSenha()
+
+        //EXERCICIOS COM WHILE E FOR
+
+        //CRIE UMA CALCULADORA COM WHILE E COM FOR
+</script>
+    </html>
+

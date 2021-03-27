@@ -1,0 +1,121 @@
+<html>
+    <script>
+
+        //  FUNCAO COM PARAMETOR/ARGUMENTO
+
+
+
+
+
+   // - Parametro é uma informação enviada para uma função no momento em que realizamos a chamada dela
+ //OU SEJA, parametro é o conteudo dentro dos () que sera a informação executada pela função
+
+ //== É UMA COMPARAÇÃO
+//= É UMA ATRIBUIÇÃO
+
+
+    var numeroChave =  prompt("Qual a chave? ")
+function surpresa(chave){
+    if(chave == 1){
+        alert("Palhaço")
+    }
+}
+
+surpresa(numeroChave)
+
+
+function mediaAluno(y, i, nome){
+    var nota1 = Number(prompt("Nota1"));
+    var nota22 = Number(prompt("nota2"))
+    var nome = prompt("Digite seu nome")
+    
+    //EXPLICAR A PRIORIDADE QUE A () DA A EXECUCAO DO CODIGO OU CALCULO
+var media = (y + i) / 2
+alert(nome + media)
+   
+}
+
+
+//REFAZER TODOS OS EXERCICIOS COM CONDICOES
+
+var outNome = prompt('Insira o nome do produto');
+var outValor = Number(prompt("Insira o valor do produto"));
+
+function calcular(nome, valor){
+var conta = valor * 2
+var promocao =  5
+var contaFinal = conta - promocao
+
+alert( "O valor final de " + nome + " é " + contaFinal)
+
+
+}
+calcular(outNome, outValor)
+
+
+
+
+/////// MEDIA ALUNO ///////
+
+var outNome = prompt("Insira o nome do aluno: ")
+    var outNota1 = Number(prompt("Insira a primeira nota: "))
+    var outNota2 = Number(prompt("Insira a segunda nota: "))
+function mediaAluno(nome, nota1, nota2){
+    var media = (nota1 + nota2) / 2
+    alert(nome + " Sua média é: " + media)
+}
+mediaAluno(outNome, outNota1, outNota2)
+
+
+///////////ETAPA 2///////
+
+var outNome = prompt("Insira o nome do aluno: ")
+    var outNota1 = Number(prompt("Insira a primeira nota: "))
+    var outNota2 = Number(prompt("Insira a segunda nota: "))
+function mediaAluno(nome, nota1, nota2){    
+    var media = (nota1 + nota2) / 2
+    //EXPLICAR A PRIORIDADE QUE A () DA A EXECUCAO DO CODIGO OU CALCULO
+    if(media >= 5){
+    alert(nome + " Sua Média é: " + media + " .Você foi aprovado")
+
+    }else{
+        alert(nome + " Sua Média é: " + media + " .Você foi reprovado")
+    }
+}
+    mediaAluno(outNome, outNota1, outNota2)
+
+
+
+//////ETAPA 3/////////
+
+
+
+function infoNota(){
+var outNome = prompt("Insira o nome do aluno: ")
+    var outNota1 = Number(prompt("Insira a primeira nota: "))
+    var outNota2 = Number(prompt("Insira a segunda nota: "))
+
+    function mediaAluno(nome, nota1, nota2){
+    if(nome == "" || nota1 == "" || nota2 == "" ){
+        alert("Por Favor, insira o nome e as notas");
+        
+        return infoNota()
+        
+    }
+    
+    var media = (nota1 + nota2) / 2
+    //EXPLICAR A PRIORIDADE QUE A () DA A EXECUCAO DO CODIGO OU CALCULO
+    if(media >= 5){
+    alert(nome + " Sua Média é: " + media + " .Você foi aprovado")
+
+    }else if(media <=4){
+        alert(nome + " Sua Média é: " + media + " .Você foi reprovado")
+    }
+}
+    
+    mediaAluno(outNome, outNota1, outNota2)
+}
+infoNota()
+
+    </script>
+</html>

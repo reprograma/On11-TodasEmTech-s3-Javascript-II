@@ -1,0 +1,48 @@
+<html>
+    <script>
+        //Se a variável ou expressão não estiver no escopo "atual", ela não podera ser executada
+
+        //Tipos de Escopo Local e Global
+
+        //EX:
+
+var numeroChave =  prompt("Qual a chave? ") // numeroChave é uma varíavel declarada dentro das tags SCRIPT, ela pertence ao escopo GLOBAL do código
+function surpresa(chave){ //CHAVE é um parametro atribuido a FUNCAO SURPRESA, ela pertence ao ESCOPO da função SURPRESA
+    if(chave == 1){
+        alert("Palhaço") // ALERT é um comanda que esta dentro da FUNÇÃO surpresa, ela pertence a FUNÇÃO SURPRESA
+    }
+}
+
+surpresa(numeroChave)
+
+
+// OBS: VARIAVEIS DE ESCOPO LOCAL, NÃO PODE SER UTILIZADA NO ESCOPO GLOBAL MAS VARIAVEIS DE ESCOPO GLOBAL, PODEM SER UTILIZADAS EM ESCOPO LOCAL
+// ESCOPO É O QUE DETERMINA QUAIS DADOS PODEM SER ACESSADOS EM ALGUIMA DETERMINADA PARTE DO CODIGO 
+
+//EX:
+function batata(){ 
+var nome = "Batata Recheada"
+//ESCOPO DE BATATA
+
+   
+    function recheio(){
+        var sabor = "Queijo"
+        //ESCOPO DE RECHEIO
+        console.log(nome) // Batata Recheada
+        console.log(sabor) //Queijo
+
+    }
+console.log(nome) //Batata Recheada
+console.log(sabor) // Indefinido
+
+}
+
+
+//PORQUE QUANDO DAMOS CONSOLE LOG EM SABOR, DENTRO DO ESCOPO BATATA, TEMOS UMA INDEFINIÇÃO? 
+//PORQUE O ESCOPO BATATA É UM ESCOPO LOCAL DA FUNÇÃO BATATA, MAS O ESCOPO RECHEIO É UMA FUNÇÃO LOCAL DO ESCOPO BATATA.
+// RECHEIO FOI CRIADO DENTRO DE BATATA, MAS BATATA FOI CRIADO DENTRO DO ESCOPO GLOBAL
+
+
+//COMPLEMENTAR: https://imasters.com.br/desenvolvimento/escopos-em-javascript
+    </script>
+</html>
