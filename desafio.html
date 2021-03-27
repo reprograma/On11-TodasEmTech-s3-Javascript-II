@@ -6,14 +6,84 @@
 //EXERCICIO DE FUNCAO:
 
 /* Elabore um programa que leia a velocidade permitida em uma estrada e a velocidade de um condutor.
-Se a velocidade for inferior ou igual a velocidade permitida, exiba a mensagem "Sem Multa". Se a velocidade for de até 10% maior que a permitida,
-exiba "Multa Leve". E, se a velocidade for superior a 20% da velocidade permitida, exiba "Multa Grave."*/
+Se a velocidade for inferior ou igual a velocidade permitida, exiba a mensagem "Sem Multa". Se a velocidade 
+for de até 10% maior que a permitida, exiba "Multa Leve". E, se a velocidade for superior a 20% da 
+velocidade permitida, exiba "Multa Grave."*/
+
+        function multaExcessoVel(){
+            var velPermitida = Number(prompt("Insira a  velocidade permitida:"))
+            var velCondutor = Number(prompt("Insira a velocidade do condutor"))
+            var multaLeve = (velPermitida * 0.1) + velPermitida
+            var multaGave = (velPermitida * 0.2) + velPermitida
+
+            if(velPermitida == "" || velCondutor == ""){
+
+                return multaExcessoVel()
+            }
+
+            if(velCondutor <= velPermitida ){
+                alert("SEM MULTA!")
+            
+            }else if(velCondutor >= multaLeve && velCondutor < multaGave){
+                alert("MULTA LEVE!")
+            
+            }else {
+                alert("MULTA GRAVE!")
+            }
+
+
+        }
+            multaExcessoVel()
+
+
 
 //DESAFIO DE REPETIÇAO e FUNCAO
 
 //Crie um programa que verifique o valor inserido pelo usuário e imprima seus multiplos ( MAX 100 Numeros )
 
+//mostra os multiplos de um número entre 1 e 100
+/*function multiplosDeUmNumero (){
 
+    var numero = Number(prompt("Insira um numero:"))
+    
+    if(numero == ""){
+        return multiplosDeUmNumero()
+    }
+        for(var i=1; i<=100; i++){
+   
+            if( (i%numero) == 0 ){
+                document.write(i)
+                document.write("<br>")
+   
+            }
+        }
+}
+    multiplosDeUmNumero()*/
+
+
+
+
+// mostra os 100 multiplos de um número
+function multiplosDeUmNumero (){
+
+var numero = Number(prompt("Insira um numero:"))
+
+if(numero == ""){
+    return multiplosDeUmNumero()
+}
+    for(var i=1; i<=100; i++){
+
+        var multiplos = numero * i
+            document.write(" " + multiplos)
+            //document.write("<br>")
+
+    }
+}
+multiplosDeUmNumero()
+
+
+
+    
 
     </script>
 </html>
