@@ -35,29 +35,41 @@ speedTicket();
 
 //Crie um programa que verifique o valor inserido pelo usuário e imprima seus multiplos ( MAX 100 Numeros )
 
+//OI KEYLA, POR FAVOR LEIA ANTES DE VER O EXERCÍCIO: Eu havia feito uma função que calculava os divisores, me confundi, mas as meninas me disseram que os múltiplos seria tipo a tabuada, então eu fiz outra com os multiplos, mas deixei a dos divisores também, mas usei um push pra evitar usar o filter que eu tinha usado no PR anterior
+
+
 function multiple() {
   
-  let n = Number(prompt('Digite um número inteiro maior que 0 e menor que 100:'));
+  let num = Math.floor(Math.random() * 100);
+  console.log(num);
+  let m = []
+  for(i = 1; i <= 100; i++) {
+     m.push(i * num)
+  }
+  let result = m.join(' - ')
+  alert(`Os 100 primeiros múltiplos de ${num} são: ${result}`) 
+}
+multiple();
+
+//-----------------------------------------------x------------------------------------------------------------------
+
+function dividers() {
   
+  let n = Number(prompt('Digite um número inteiro entre 0 e 100:'));
   if(n <= 0 || n == '' || n >= 100) {
     return multiple();
   }
 
-  let multi = []
+  let d = []
   for(i = 1; i <= 100; i++) {
     if(i%n == 0) {
-      multi[i] = i
+      d.push(i)
     }
   }
-  function isTrue(value) {
-    return !!value
-  }
-
-  let result = multi.filter(isTrue)
-  alert(`Os multiplos de ${n} são: ${result}`);
+  alert(`Os divisores de ${n} são: ${d}`);
 }
 
-multiple();
+dividers();
 
     </script>
 </html>
