@@ -1,19 +1,57 @@
 <html>
-    <script>
-// DESAFIO 
+<script>
+    // DESAFIO 
 
 
-//EXERCICIO DE FUNCAO:
+    //EXERCICIO DE FUNCAO:
 
-/* Elabore um programa que leia a velocidade permitida em uma estrada e a velocidade de um condutor.
-Se a velocidade for inferior ou igual a velocidade permitida, exiba a mensagem "Sem Multa". Se a velocidade for de até 10% maior que a permitida,
-exiba "Multa Leve". E, se a velocidade for superior a 20% da velocidade permitida, exiba "Multa Grave."*/
-
-//DESAFIO DE REPETIÇAO e FUNCAO
-
-//Crie um programa que verifique o valor inserido pelo usuário e imprima seus multiplos ( MAX 100 Numeros )
+    /* Elabore um programa que leia a velocidade permitida em uma estrada e a velocidade de um condutor.
+    Se a velocidade for inferior ou igual a velocidade permitida, exiba a mensagem "Sem Multa". Se a velocidade for de até 10% maior que a permitida,
+    exiba "Multa Leve". E, se a velocidade for superior a 20% da velocidade permitida, exiba "Multa Grave."*/
 
 
+    function calculoMulta(velocidadeCondutor) {
 
-    </script>
+        if (velocidadeCondutor >= multaGrave) {
+            alert("Multa Grave")
+
+        } else if (velocidadeCondutor == multaLeve) {
+            alert("Multa Leve")
+
+        } else if (velocidadeCondutor >= multaLeve) {
+            alert("Você ultrapassou o limite permitido de velocidade e receberá uma multa!")
+
+        } else {
+            alert("Sem Multa")
+        }
+
+    }
+
+    calculoMulta(velocidadeCondutor)
+
+
+    //DESAFIO DE REPETIÇAO e FUNCAO
+
+    //Crie um programa que verifique o valor inserido pelo usuário e imprima seus multiplos ( MAX 100 Numeros )
+
+    function multiplos() {
+        var numero = Number(prompt("Por favor, digite um número maior que 0 e menor que 100:"))
+
+        if (numero < 0 || numero > 100) {
+            return multiplos()
+        }
+
+        for (var i = 1; i <= 100; i++) {
+            var calculo = numero * i
+            alert(`O múltipo de ${numero} será: ${calculo}`)
+        }
+
+
+    }
+
+    multiplos()
+
+
+</script>
+
 </html>
