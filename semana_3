@@ -1,0 +1,127 @@
+<html>
+    <script>
+/* DESAFIO 
+//EXERCICIO DE FUNCAO:*/
+
+/* Elabore um programa que leia a velocidade permitida em uma estrada e a velocidade de um condutor.
+Se a velocidade for inferior ou igual a velocidade permitida, exiba a mensagem "Sem Multa". Se a velocidade for de até 10% maior que a permitida,
+exiba "Multa Leve". E, se a velocidade for superior a 20% da velocidade permitida, exiba "Multa Grave.
+
+"DESAFIO DE REPETIÇAO e FUNCAO*/
+function exercicioValidarMulta (){
+let velopermitida = parseFloat(prompt("Digite a velocidade da pista:"));
+let velomotorista = parseFloat(prompt("Digite a velocidade do motorista:"));
+let leve = velopermitida*0.1;
+let grave = velomotorista*0.2;
+if(velopermitida > velomotorista ){
+   document.writeln("Sem multa!");
+}
+else if (velomotorista< (velopermitida+leve)){
+    document.writeln("O motorista levará uma MULTA LEVE")
+}
+else{
+    document.writeln("O motorista levará uma MULTA GRAVE")
+}
+    
+    }
+exercicioValidarMulta ();
+
+    </script>
+</html>
+
+// html
+
+<!DOCTYPE html>
+<meta charset="utf-8">  
+<html lang="pt-br">
+<head>
+	<title style="font-size:100px">&#128522 Reprograma - Semana 3</title>
+</head>
+<body>
+<img src="https://reprograma.com.br/assets/img/logo-fundoclaro.png" >
+<h2>Calcular os Múltiplos</h2>
+<label>Digite um número entre 1 a 100.</label>
+<br/>
+<br/>
+
+<input class="entrada-usuario" type="number" min="0"/>
+<br/>
+<button class="botao-calcular">Calcular</button>
+<br/>
+<div class="resultado">
+</div>
+<script src="desafio_multiplos.js"></script>
+</body>
+</html>
+
+//script
+/*Código do Javascript ao qual estudei bastante tempo no desafio da semana 3.
+Restringiu no caso de o usuário insirar o zero ou algum outro número negativo. Limitado no uso do botão.*/
+
+console.clear()
+
+/*
+Utilizando o DOM - Document Object Model - para auxiliar na tela do html. 
+*/
+
+// const entradaUsuario = document.querySelector('.entrada-usuario')
+const botaoCalcular = document.querySelector('.botao-calcular')
+const resultado = document.querySelector('.resultado')
+
+
+// Função para limpar os resultados da tela
+function limparResultado() {
+	resultado.innerHTML = ''
+}
+
+function limparInput(){
+	document.querySelector('.entrada-usuario').value = ""
+}
+
+// Criado uma função para calcular os múltiplos do número escolhido pelo usuário (1 a 100).
+function calcularMultiplos(entradaUsuario, maximoMultiplo){
+
+	const stringParaNumero = Number(entradaUsuario)
+	
+	let multiplos = []
+	
+	for(let i = 0; i <= maximoMultiplo; i++){
+		if(stringParaNumero * i <= maximoMultiplo){
+			multiplos.push(stringParaNumero * i)
+		}
+	}
+	
+	return multiplos
+}
+
+/** 
+* No clique do botão realiza-se os cálculos e colocado os resultados obtidos na tela em html.
+*/
+botaoCalcular.addEventListener('click', () => {
+	
+	const entradaUsuarioValor = document.querySelector('.entrada-usuario').value
+	const strParaNumero = Number(entradaUsuarioValor)
+	
+	if(strParaNumero <= 0){
+		limparResultado()
+		limparInput()
+		alert('Somente números positivos são permitidos.')
+	}
+	else {
+		// Função para limpar os resultados
+		limparResultado()
+
+		// Criado um elemento h2
+		let titulo = document.createElement("h2")
+
+		// Colocado o título dentro do resultado
+		resultado.append(`Números múltiplos de (${entradaUsuarioValor}) encontrados menores que 100.`, titulo)
+
+		// Criado um elemento div para o resultado
+		let multiplos = document.createElement('div')
+
+		// Colocado os resultados dentro da classe resultado na tela
+		resultado.append(multiplos, calcularMultiplos(entradaUsuarioValor, 100))
+	}
+})
+
