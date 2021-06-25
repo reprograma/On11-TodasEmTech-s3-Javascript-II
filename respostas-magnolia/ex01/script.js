@@ -1,7 +1,7 @@
 /*  Exercício 1:
-*   Farmacia JS está em promoção.
+*   Farmácia JS está em promoção.
 *   A cada 2 produtos iguais comprados, receba 5 reais de desconto.
-*   Escreva um programa para auxiliar a farmacia a calcular o valor final do produto.
+*   Escreva um programa para auxiliar a farmácia a calcular o valor final do produto.
 */
 
 let produto1 = prompt('Informe o nome do produto 1')
